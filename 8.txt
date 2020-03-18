@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class exercicio {
+	
+	public static void main(String[] args) {
+	String valor, valfinal, Celsius, Fahrenheit;
+	float temp;
+	Scanner input = new Scanner(System.in);
+	System.out.println("Escolha entre Celsius e Fahrenheit");
+	valor = input.nextLine();
+	System.out.println("Converter para Celsius ou Fahrenheit?");
+	valfinal = input.nextLine();
+	System.out.println("Digite a Temperatura a ser convertida:");
+	temp = input.nextFloat();
+		if(valor.equals("Celsius")&&valfinal.equals("Fahrenheit")){
+			System.out.format("%.2f\n", (temp * 1.8)+ 32.0);
+		}else if(valor.equals("Celsius")&&valfinal.equals("Celsius")) {
+			System.out.println(temp);
+		}else if(valor.equals("Fahrenheit")&&valfinal.equals("Celsius")){  
+			System.out.format("%.2f\n", (temp / - 32.0) *5.0/9.0);
+		}else if(valor.equals("Fahrenheit")&&valfinal.equals("Fahrenheit"))
+			System.out.println(temp);
+		}
+	}

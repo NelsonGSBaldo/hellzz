@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class exercicio {
+	
+	public static void main(String[] args) {
+	double numero1;
+	double numero2;
+	double soma;
+	Scanner input = new Scanner(System.in);
+	System.out.println("Digite o primeiro número da soma: ");
+	numero1 = input.nextDouble();
+	System.out.println("Digite o ultimo número: ");
+	numero2 = input.nextDouble();
+	
+	soma = numero1+numero2;
+		if(soma>20){ 
+		System.out.println(soma+8);
+		}else {
+		System.out.println(soma-5);
+}
+}
+}

@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class exercicio {
+	
+	public static void main(String[] args) {
+		double m1 = 0.1, m2 = 0.5, m3 = 0.10, m4 = 0.25, m5 = 0.50, m6 = 1.0;
+		double quantm1, quantm2, quantm3, quantm4, quantm5, quantm6;
+		double valor = 17.65;
+		double total;
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("O valor do almoço custa 17,65.");
+		
+		System.out.println("Quantas moedas de 1 centavo há no cofre?");
+		quantm1 = input.nextDouble();
+
+		System.out.println("Quantas moedas de 5 centavo há no cofre?");
+		quantm2 = input.nextDouble();
+		
+		System.out.println("Quantas moedas de 10 centavo há no cofre?");
+		quantm3 = input.nextDouble();
+		
+		System.out.println("Quantas moedas de 25 centavo há no cofre?");
+		quantm4 = input.nextDouble();
+		
+		System.out.println("Quantas moedas de 50 centavo há no cofre?");
+		quantm5 = input.nextDouble();
+		
+		System.out.println("Quantas moedas de 1 real há no cofre?");
+		quantm6 = input.nextDouble();
+		
+		m1 = quantm1*m1;
+		m2 = quantm2*m2;
+		m3 = quantm3*m3;
+		m4 = quantm4*m4;
+		m5 = quantm5*m5;
+		m6 = quantm6*m6;
+		total = m1 + m2 + m3+ m4 + m5 + m6;
+		
+		if(total>=valor){ System.out.println("Você tem: R$" + total + " e pode comprar o almoço.");
+		}else System.out.println("Você tem: R$" +total+ " e não pode comprar o almoço.");
+	}
+}

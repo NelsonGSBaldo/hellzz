@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class exercicio {
+	
+	public static void main(String[] args) {
+	double x, y, z;
+	
+	Scanner input = new Scanner(System.in);
+	System.out.println("Digite um numero:");
+	x = input.nextDouble();
+	System.out.println("Digite outro numero:");
+	y = input.nextDouble();
+	System.out.println("Digite o ultimo numero:");
+	z = input.nextDouble();
+		if(x>y || x>z){ System.out.println(x+" É o maior deles");
+		}else if(y>z) System.out.println(y+" É o maior deles");
+		else { System.out.println(z+" É o maior deles");
+		}
+  }
+}
