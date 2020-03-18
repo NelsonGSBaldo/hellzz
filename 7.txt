@@ -7,7 +7,7 @@ public class exercicio {
 		double quantm1, quantm2, quantm3, quantm4, quantm5, quantm6;
 		double valor = 17.65;
 		double total;
-		
+		//asidasjkodijasidjasidjsaidjasidji
 		Scanner input = new Scanner(System.in);
 		System.out.println("O valor do almoço custa 17,65.");
 		
